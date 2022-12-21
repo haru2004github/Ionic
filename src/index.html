@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IONIC</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../node_module/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+  
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .slideIn{
+            transform: translateX(10%);
+            transition: 1s;
+            animation: slideIn 30s linear infinite;
+        }
+        .card-hover .card-icon{
+            transition: 0.5s;
+        }
+        .card-hover:hover .card-iconOne{
+            width:3.5rem!important;
+            margin-bottom: 4rem;
+        }
+
+        .card-hover:hover .card-icon{
+            width:3.5rem!important;
+            margin-bottom: 3.5rem;
+        }
+
+       
+
+        @keyframes slideIn {
+            100%{
+               transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width:600px) {
+            .card-hover:hover .card-icon{
+            width:3.5rem!important;
+            margin-bottom: 3.5rem;
+        }
+        .card-hover .card-iconOne{
+            width:3.5rem!important;
+            margin-bottom: 4rem;
+        }
+        .card-hover .card-icon{
+            width:3.5rem!important;
+            margin-bottom: 3.5rem;
+        }
+        .slideIn{
+            transform: translateX(0);
+            transition: 1s;
+            animation: slideIn 30s linear infinite;
+        }
+        }
+
+    </style>
+</head>
+<body class="dark:bg-slate-900">
+    <nav class="">
+        <div class="relative w-full h-[65px] hidden  z-40 bg-slate-500  mx-auto lg:flex justify-center items-center">
+            <div class="absolute w-full ">
+                <img class="object-cover w-full h-[65px]" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/appflow-bg.png" alt="">
+            </div>
+            <div class="absolute w-full flex justify-center items-center z-20">
+                <div class="flex justify-center items-center  gap-x-5 ">
+                    <a href="" class="text-md font-bold text-slate-100">
+                        Ionic is joining OutStystems!
+                    </a>
+                    <a href="" class="text-md font-bold text-slate-100">
+                        Building the future of app development, together 
+                    </a>
+                    <a href="" class="px-2 p-1 text-[0.8rem] font-bold text-slate-100 bg-white/25 rounded-full uppercase">
+                        Read The Announcement
+                        <i class="fa-solid fa-arrow-right text-slate-50"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <div class="sticky dark:bg-slate-800 bg-white w-full left-0 top-0 z-20 py-5 lg:py-0 shadow ">
+        <div class="relative ">
+            <div class="max-w-6xl mx-auto">
+                <nav class="text-sm prose prose-slate max-w-none flex justify-between items-center px-5 py-0 lg:py-1">
+                    <div class="logo w-20">
+                      
+                            
+                    </div>
+                    <div class="show-mobile-menu-box hidden lg:flex transition ">
+                        <div class="fixed h-screen md:h-auto overflow-y-scroll md:overflow-y-visible lg:static z-20 top-0 lg:top-auto left-0 lg:left-auto right-0 lg:right-auto w-[98%] lg:w-auto 
+                        
+                        bg-white lg:bg-transparent  shadow-2xl lg:shadow-none mx-auto rounded-2xl lg:rounded-none p-1">
+                            <div onclick="menuIcon()" class="lg:hidden menu-icon absolute top-5 right-5 flex justify-start items-center ">
+                                <div class="flex justify-center items-center rounded-full border w-10 h-10">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <ul class="lg:flex justify-center lg:space-x-5 list-none pl-0 my-0 ">
+
+                                <li class="group py-5 my-0 border-b lg:border-none last:border-none mega ">
+                                    <div class="rounded-xl my-0 text-slate-600 
+                                     lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md">Solutions</div>
+                                    <div class="mega-item max-w-6xl lg:absolute lg:left-0 lg:right-0 lg:m-auto lg:w-full lg:rounded-3xl lg:bg-white lg:shadow-2xl p-3 lg:p-5 transition delay-150">
+                                        <div class="lg:flex  gap-x-20 space-y-5 lg:space-y-0 p-0">
+
+                                            <div class="border border-slate-300 duration-300 p-5 rounded-xl  bg-slate-100">
+                                                <div class="">
+                                                    <img class="w-16" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/d7a8aed7-d1dc-4756-90d4-752c3f951e5f_ionic-io-homepage-building-1.png" alt="">
+                                                </div>
+                                                <div class="mt-6">
+                                                    <h1>Ready for the future</h1>
+                                                    <h3 class="text-slate-400 text-lg max-w-[250px] ">A flexible, future-proof foundation that's built on open standards and evolves.</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class=" ">
+                                                <div class="amazing rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl lg:text-xl text-slate-700 mt-7">Mobile App Dev</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5 flex space-x-3">
+                                                            <i class="fa-solid fa-book text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Ionic SDK</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 flex space-x-3">
+                                                            <i class="fa-solid fa-hourglass-start text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Portals</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 flex space-x-3">
+                                                            <i class="fa-brands fa-squarespace  text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Integrations</a>
+                                                        </li>
+                                                        <a href="" class="tet-slate-500 mt-5">
+                                                            Explore Docs →
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class=" ">
+                                                <div class="amazing  rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl  text-slate-700 mt-7">Mobile CI/CD</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5 flex space-x-3 text-slate-500">
+                                                            <i class="fa-solid fa-cloud  text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Live Updates</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 flex space-x-3 text-slate-500">
+                                                            <i class="fa-solid fa-box text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Native Builds</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 flex space-x-3 text-slate-500">
+                                                            <i class="fa-solid fa-download text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">App Publishing</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 flex space-x-3 text-slate-500">
+                                                            <i class="fa-solid fa-gear text-slate-700 mr-2"></i>
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Automation</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <h1 class="text-slate-700 text-xl font-bold mt-7">Mobile Security</h1>
+                                                <div class="flex space-x-5">
+                                                    <ul>
+                                                        <li class="flex space-x-3 mt-6 text-slate-500">
+                                                            <a class="text-sm" href="">
+                                                               <i class="fa-solid fa-user text-slate-700 mr-2"></i>
+                                                                Auth
+                                                            </a>
+                                                        </li>
+                                                        <li class="flex space-x-3 text-slate-500 mt-3">
+                                                            <a class="text-sm" href="">
+                                                                <i class="fa-solid fa-fingerprint  text-slate-700 mr-2"></i>
+                                                                Biometrics
+                                                            </a>
+                                                        </li>
+                                                        <li class="flex space-x-3 text-slate-500 mt-3">
+                                                            <a class="text-sm" href="">
+                                                                <i class="fa-solid fa-database  text-slate-700 mr-2"></i>
+                                                                Storage
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="group py-5 my-0 border-b lg:border-none last:border-none mega ">
+                                    <div class="rounded-xl my-0 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md">Solutions</div>
+                                    <div class="mega-item max-w-6xl lg:absolute lg:left-0 lg:right-0 lg:m-auto lg:w-full lg:rounded-3xl lg:bg-white lg:shadow-2xl p-3 lg:p-5 transition delay-150">
+                                        <div class="lg:flex lg:justify-center gap-x-20 space-y-5 lg:space-y-0 p-0">
+
+                                            <div class="hidden lg:flex lg:flex-col ">
+                                                <h1 class="text-xl text-slate-800 font-bold mt-7">Solutions</h1>
+                                                <p class="max-w-[300px] mt-4 text-lg text-slate-500 mb-10">
+                                                    Learn how to make the most of the Ionic app development platform.
+                                                </p>
+                                                <a href="" class="text-md font-bold text-slate-600 mt-5">
+                                                    Ionic Docs
+                                                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
+                                                </a>
+                                                <a href="" class="text-md font-bold text-slate-600 mt-2">
+                                                    Resources Center
+                                                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
+                                                </a>
+            
+                                            </div>
+                                            <div class=" ">
+                                                <div class="amazing rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl lg:text-xl text-slate-700 mt-7">Use Cases</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">App Creation</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Mobile Security</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">CI/CD App Delivery</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Mobile Micro Frontends</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Digital Transformation</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Portals</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class=" ">
+                                                <div class="amazing  rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl  text-slate-700 mt-7">Why Ionic</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">For Developers</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">For Architects</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">For IT Executives</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Customer Stories →</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="p-8 bg-slate-50 rounded-2xl">
+                                                    <div class="">
+                                                        <h1 class="text-slate-800 text-xl font-bold">Industries</h1>
+                                                        <div class="flex space-x-5">
+                                                            <ul>
+                                                                <li class="flex space-x-3 mt-6 text-slate-500">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-building-columns text-slate-700 mr-2"></i>
+                                                                        Banking
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 mt-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-user-graduate text-slate-700 mr-2"></i>
+                                                                        Education
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 mt-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-house-flood-water-circle-arrow-right  text-slate-700 mr-2"></i>
+                                                                        Manufactoring
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 mt-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-server  text-slate-700 mr-2"></i>
+                                                                        Technology
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-car text-slate-700 mr-2"></i>
+                                                                        Transportion
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
+                                                            <ul>
+                                                                <li class="flex space-x-3 mt-6 text-slate-500">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-heart  text-slate-700 mr-2"></i>
+                                                                        Health
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-circle-check  text-slate-700 mr-2"></i>
+                                                                        Insurance
+                                                                    </a>
+                                                                </li>
+                                                                <li class="flex space-x-3 text-slate-500 mt-3">
+                                                                    <a class="text-sm" href="">
+                                                                        <i class="fa-solid fa-cart-shopping  text-slate-700 mr-2"></i>
+                                                                        Retail
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="group py-5 my-0 border-b lg:border-none last:border-none mega ">
+                                    <div class="rounded-xl my-0 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md">Resources</div>
+                                    <div class="mega-item max-w-6xl lg:absolute lg:left-0 lg:right-0 lg:m-auto lg:w-full lg:rounded-3xl lg:bg-white lg:shadow-2xl p-3 lg:p-5 transition delay-150">
+                                        <div class="lg:flex gap-x-24 space-y-5 lg:space-y-0 p-5">
+
+                                            <div class="hidden lg:flex lg:flex-col">
+                                                <h1 class="text-xl text-slate-800 font-bold">Resources</h1>
+                                                <p class="max-w-[300px] mt-4 text-lg text-slate-500">
+                                                    Resources to help you learn how to build, secure, and deliver amazing apps
+                                                </p>
+                                                <a href="" class="text-md font-bold text-slate-600 mt-8">
+                                                    Ionic Docs
+                                                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
+                                                </a>
+                                                <a href="" class="text-md font-bold text-slate-600 mt-2">
+                                                    Resources Center
+                                                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
+                                                </a>
+            
+                                            </div>
+                                            <div class="">
+                                                <div class="amazing rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl lg:text-xl text-slate-700">Developers</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Documentation</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Ionic Framework</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Native Plugins</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Ionic Appflow</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Ionic CLI</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Portals</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="amazing  rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl  text-slate-700 ">Learn</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Blog</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Webinars</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Articles</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">eBooks</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 ">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Enterprise Guide</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Case Studies</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="amazing  rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl  text-slate-700 ">Community</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0  mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Community Hub</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Webinars</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Trusted Partners</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Ioniconf 22</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3 ">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Forum</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Discord</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="group py-5 my-0 border-b lg:border-none last:border-none mega ">
+                                    <div class="rounded-xl my-0 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md">Company</div>
+                                    <div class="mega-item max-w-6xl lg:absolute lg:left-0 lg:right-0 lg:m-auto lg:w-full lg:rounded-3xl lg:bg-white lg:shadow-2xl p-3 lg:p-5 transition delay-150">
+                                        <div class="lg:flex lg:justify-center gap-x-20 space-y-5 lg:space-y-0 p-5">
+
+                                            <div class="hidden lg:flex lg:flex-col">
+                                                <h1 class="text-xl text-slate-800 font-bold">About Ionic</h1>
+                                                <p class="max-w-[300px] mt-4 text-lg text-slate-500 mb-10">
+                                                    Get to know the people behind the code, the mission behind our work, and our vision for the future.
+                                                </p>
+            
+                                            </div>
+                                            <div class="">
+                                                <div class="amazing rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl lg:text-xl text-slate-700">Company</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">About us</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Careers(we'r hiring)</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Blog</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3" mt-3>
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Trusted Training</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Press</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500 rounded-xl no-underline" href="#">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="amazing  rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl  text-slate-700 ">Success</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon lg:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 lg:flex lg:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 lg:grid-cols-1 text-md">
+                                                        <li class="p-0 mt-5">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Advisory Services</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Enterprise Support</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Team Training</a>
+                                                        </li>
+                                                        <li class="p-0 mt-3">
+                                                            <a class="hover:text-slate-600 text-slate-500  rounded-xl no-underline" href="#">Submit a ticket</a>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="">
+                                                <div class="p-5 rounded-2xl bg-blue-500 max-w-[280px]">
+                                                    <h1 class="text-slate-300 ">FEATURED EBOOK</h1>
+                                                    <h2 class="text-slate-50 text-xl font-bold mt-8">Hybrid vs. Native</h2>
+                                                    <h3 class="text-slate-200 text-lg max-w-sm mt-5">
+                                                        Learn the differences between hybrid and native apps—we break down all the myths.
+                                                    </h3>
+                                                    <button class="px-4 py-2 text-md text-slate-50 rounded-full mt-8 bg-white/40">Read The Book</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="rounded-xl my-5 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md ">
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li class="rounded-xl my-5 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md ">
+                                    <a href="./pricing.html">Pricing</a>
+                                </li>
+                            </ul>
+                            <div class="bg-slate-100 rounded-xl p-4 flex justify-between items-center lg:hidden">
+                                <div>Contact Sales</div>
+                                <div class="">
+                                    <button class="rounded-full py-1 p-2">Log in</button>
+                                    <button class="bg-emerald-500 text-white rounded-full py-1 p-2">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="md:flex items-center gap-x-5">
+                            <div class="flex gap-x-5">
+                                <button class="px-2 py-1 bg-slate-50 rounded-lg hidden md:inline">Sign in</button>
+                                <button class="px-3 py-1 bg-slate-800 text-slate-50 rounded-full hidden md:inline">Get Started
+                                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                            <div class="lg:hidden block" onclick="menuIcon()">
+                                <i class="fa-solid fa-bars dark:text-slate-100"></i>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[72px] flex scale-75 items-center transition duration-200 rounded-full m-0 bg-slate-800 p-1">
+                                <div id="dark-switch-icon" class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center">
+                                    <i class="fa-regular fa-sun"></i>
+                                </div>
+                                <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                            </button>
+                            <!-- <h1 id="dark-text-change hidden" class="text-center text-3xl font-bold dark:text-slate-200">Light</h1> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero-section -->
+    <section class="px-5 md:px-0 max-w-6xl container mx-auto my-20 ">
+        <div class="lg:grid grid-cols-12 flex flex-col-reverse">
+            <!-- Left-content -->
+            <div class="lg:col-span-5  col-span-12 mt-8 md:mt-0 headline">
+                <div class="flex items-center md:justify-center lg:justify-start h-full">
+                    <div class="">
+                        <h1 class="text-slate-900 dark:text-slate-200 text-4xl md:text-6xl font-bold max-w-md">
+                            A new way to build and ship for mobile.
+                        </h1>
+                        <h5 class="text-slate-500 dark:text-slate-300 max-w-2xl lg:max-w-lg text-xl leading-relaxed mt-10">
+                            Ionic is changing the way mobile apps are built and delivered. From our popular open source mobile SDK to industry-leading mobile CI/CD and micro frontend solutions, Ionic helps you meet the demand for mobile across your business.
+                        </h5>
+                        <!-- Button -->
+                        <div class="flex  gap-x-4 mt-10">
+                            <button class="bg-slate-900 text-slate-50 px-5 py-2 rounded-full font-bold">
+                                Start Free                     
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                            </button>
+                            <div class="flex flex-col">
+                                <span class="text-slate-400">Questions?</span>
+                                <span class="border-b-2 border-slate-700 text-slate-500 font-bold">Talk to an expert 
+                                    <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right-image -->
+            <div class="h-full col-span-11 lg:col-span-7 max-w-2xl lg:max-w-6xl hidden lg:block headline">
+                <svg class=" md:object-cover " viewBox="0 0 739 715" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="image-top_svg__gradients"><path d="M691 531a177.5 184 0 01-177.5 184A177.5 184 0 01336 531a177.5 184 0 01177.5-184A177.5 184 0 01691 531z" fill="url(#image-top_svg__a)" class="image-top_svg__saturate"></path><path d="M437 301a218.5 221 0 01-218.5 221A218.5 221 0 010 301 218.5 221 0 01218.5 80 218.5 221 0 01437 301z" fill="url(#image-top_svg__b)"></path><path d="M626 267a218.5 221 0 01-218.5 221A218.5 221 0 01189 267 218.5 221 0 01407.5 46 218.5 221 0 01626 267z" fill="url(#image-top_svg__c)"></path><path d="M716 186a174.5 186 0 01-174.5 186A174.5 186 0 01367 186 174.5 186 0 01541.5 0 174.5 186 0 01716 186z" fill="url(#image-top_svg__d)"></path><path d="M490 243c0 122.06-97.83 221-218.5 221S53 365.06 53 243 150.83 22 271.5 22 490 120.94 490 243z" fill="url(#image-top_svg__e)"></path><path d="M556 419a245 237 0 01-245 237A245 237 0 0166 419a245 237 0 01245-237 245 237 0 01245 237z" fill="url(#image-top_svg__f)" class="image-top_svg__saturate"></path><path d="M739 324a218.5 221 0 01-218.5 221A218.5 221 0 01302 324a218.5 221 0 01218.5-221A218.5 221 0 01739 324z" fill="url(#image-top_svg__g)" class="image-top_svg__saturate"></path></g><path d="M354.6 502.43a1 1 0 00-1.12.86c-.9 6.82 3.23 13.73 11.86 18.71L544.2 625.27c11.88 6.86 30.68 6.86 42.56 0l63.56-36.7c8.22-4.74 12.35-11.2 11.96-17.71a1 1 0 00-1.06-.94 1 1 0 00-.94 1.06c.34 5.6-3.17 11.37-10.96 15.86l-63.56 36.7c-11.07 6.4-29.5 6.4-40.56 0L366.34 520.27c-8.19-4.73-11.65-10.85-10.88-16.72a1 1 0 00-.86-1.12z" color="#000" fill="#002a5e"></path><path d="M354.6 501.43a1 1 0 00-1.12.86c-.9 6.82 3.23 13.73 11.86 18.71L544.2 624.27c11.88 6.86 30.68 6.86 42.56 0l63.56-36.7c8.22-4.74 12.35-11.2 11.96-17.71a1 1 0 00-1.06-.94 1 1 0 00-.94 1.06c.34 5.6-3.17 11.37-10.96 15.86l-63.56 36.7c-11.07 6.4-29.5 6.4-40.56 0L366.34 519.27c-8.19-4.73-11.65-10.85-10.88-16.72a1 1 0 00-.86-1.12z" color="#000" fill="#002a5e"></path><path d="M450.18 444.43c-7.67 0-15.34 1.71-21.28 5.14l-63.56 36.7c-7.86 4.54-11.98 10.63-11.98 16.86 0 6.24 4.12 12.34 11.98 16.87L544.2 623.27c11.88 6.86 30.68 6.86 42.56 0l63.56-36.7c7.86-4.53 11.98-10.63 11.98-16.86 0-6.23-4.12-12.33-11.98-16.87L471.47 449.57c-5.94-3.43-13.62-5.14-21.29-5.14zm0 2.08c7.38 0 14.75 1.6 20.29 4.8l178.86 103.26c7.45 4.3 10.98 9.79 10.98 15.14 0 5.35-3.53 10.83-10.98 15.13l-63.56 36.7c-11.07 6.39-29.5 6.39-40.56 0L366.34 518.27c-7.45-4.3-10.98-9.78-10.98-15.14 0-5.35 3.53-10.83 10.98-15.13l63.56-36.7c5.54-3.2 12.91-4.79 20.28-4.79zM646.04 85.16c-4.86-.41-10.44 1.1-16.16 4.4L449.95 193.43c-13.05 7.53-21.29 23.2-21.29 36.86v74.24c0 11.66 5.79 19.48 14.24 20.98a1 1 0 001.16-.8 1 1 0 00-.8-1.17c-7.46-1.32-12.6-8-12.6-19V230.3c0-12.84 7.97-28.02 20.29-35.13L630.88 91.29c5.45-3.15 10.67-4.5 15-4.14 4.31.37 7.74 2.38 9.94 6.17a1 1 0 001.37.36 1 1 0 00.36-1.37 14.28 14.28 0 00-11.5-7.15z" color="#000" fill="#002a5e"></path><path d="M643.38 85.73c-3.75.32-7.85 1.72-12.13 4.19L451.3 193.8c-13.05 7.54-21.28 23.2-21.28 36.87v74.24c0 11.65 5.78 19.47 14.24 20.98a1 1 0 001.16-.81 1 1 0 00-.81-1.16c-7.45-1.33-12.6-8-12.6-19.01v-74.24c0-12.85 7.98-28.02 20.3-35.13L632.24 91.65c5.45-3.15 10.43-4.37 14.52-3.88 4.1.48 7.33 2.6 9.55 6.42a1 1 0 001.37.36 1 1 0 00.36-1.37 14.47 14.47 0 00-11.04-7.4 18.07 18.07 0 00-3.63-.05z" color="#000" fill="#002a5e"></path><path d="M643.83 86.45c-3.49.3-7.29 1.57-11.22 3.84L452.68 194.17c-11.88 6.86-21.28 23.14-21.28 36.87v74.24c0 9.07 3.22 15.69 8.61 18.8 5.4 3.12 12.74 2.6 20.6-1.94l179.93-103.88c11.89-6.86 21.28-23.15 21.28-36.87v-74.24c0-9.07-3.21-15.7-8.61-18.8a15.72 15.72 0 00-9.38-1.9zm.14 1.98c3.14-.28 5.92.3 8.24 1.65 4.63 2.67 7.61 8.47 7.61 17.07v74.24c0 12.79-9.2 28.74-20.28 35.14L459.61 320.4c-7.45 4.3-13.96 4.61-18.6 1.94-4.63-2.68-7.61-8.47-7.61-17.07v-74.24c0-12.8 9.2-28.75 20.28-35.14L633.61 92.02c3.73-2.15 7.22-3.3 10.36-3.59zm-414.47 67.8a21.01 21.01 0 00-28.69 7.69 21.02 21.02 0 007.69 28.68 21.01 21.01 0 0028.69-7.68 21.02 21.02 0 00-7.7-28.69zm-1 1.73a18.99 18.99 0 016.95 25.96 18.98 18.98 0 01-25.95 6.95 18.98 18.98 0 01-6.96-25.95 18.99 18.99 0 0125.96-6.96z" color="#000" fill="#002a5e"></path><path d="M232.94 187.38c-3.07 5.38-15.24 9.79-24.1 4.67-8.88-5.12-11.7-17.37-8.02-23.21-.82 3.16-1.27 12.13 10.33 18.83 11.6 6.7 19.35 2.83 21.79-.29z" fill="#002A5E"></path><path d="M381.27 389.8a16.36 16.36 0 00-22.33 5.99 16.36 16.36 0 005.99 22.33 16.36 16.36 0 0022.32-5.98 16.36 16.36 0 00-5.98-22.33zm-1 1.74a14.33 14.33 0 015.25 19.6 14.33 14.33 0 01-19.6 5.25 14.33 14.33 0 01-5.25-19.6 14.33 14.33 0 0119.6-5.25z" color="#000" fill="#002a5e"></path><path d="M383.8 413.9c-2.32 4.02-11.7 7.52-18.5 3.59-6.8-3.93-8.47-13.8-6.15-17.8 0 0-.97 9.3 7.92 14.44 8.9 5.13 16.72-.22 16.72-.22z" fill="#002A5E"></path><path d="M497.48 43.07a8.89 8.89 0 00-12.12 3.25 8.89 8.89 0 003.25 12.12 8.89 8.89 0 0012.12-3.25 8.89 8.89 0 00-3.25-12.12zm-1 1.73a6.86 6.86 0 012.52 9.4 6.86 6.86 0 01-9.4 2.51 6.86 6.86 0 01-2.5-9.38 6.86 6.86 0 019.38-2.52z" color="#000" fill="#002a5e"></path><path d="M498.53 55.86c-1.19 2.05-6 3.85-9.49 1.83-3.49-2.01-4.34-7.08-3.15-9.13 0 0-.5 4.77 4.06 7.4 4.57 2.64 8.58-.1 8.58-.1z" fill="#002A5E"></path><path d="M277.2 214.35c-4.37-.37-9.3.82-14.35 3.73l-64.3 37.12c-11.83 6.83-21.28 21.8-21.28 36.86v207.77c0 6.6 1.48 12.19 4.27 16.2 2.8 4 6.96 6.37 11.96 6.39a1 1 0 001-1 1 1 0 00-1-1c-4.38-.01-7.83-1.98-10.31-5.54-2.48-3.56-3.92-8.75-3.92-15.05V292.06c0-14.22 9.16-28.7 20.28-35.13l64.3-37.12c9.53-5.5 17.88-4.39 22.76 1.4a1 1 0 001.4.12 1 1 0 00.12-1.4 15.7 15.7 0 00-10.93-5.58z" color="#000" fill="#002a5e"></path><path d="M278.2 215.35c-4.37-.37-9.3.81-14.35 3.73l-64.3 37.12c-11.83 6.83-21.28 21.8-21.28 36.86v207.77c0 6.6 1.49 11.96 4.3 15.72a14.47 14.47 0 0011.93 5.87 1 1 0 001-1 1 1 0 00-1-1c-4.42-.01-7.87-1.77-10.33-5.07-2.47-3.3-3.9-8.22-3.9-14.52V293.06c0-14.22 9.16-28.7 20.28-35.13l64.3-37.12c9.53-5.5 17.88-4.4 22.76 1.4a1 1 0 001.4.12 1 1 0 00.12-1.4 15.7 15.7 0 00-10.93-5.58z" color="#000" fill="#002a5e"></path><path d="M276.07 216.24c-3.5.3-7.3 1.57-11.22 3.84l-64.3 37.12c-11.88 6.86-21.28 23.14-21.28 36.86v207.77c0 9.07 3.22 15.7 8.61 18.81 5.4 3.12 12.75 2.6 20.6-1.94l64.3-37.12c11.88-6.86 21.28-23.14 21.28-36.87V236.95c0-9.08-3.22-15.7-8.62-18.81a15.72 15.72 0 00-9.37-1.9zm.13 1.98c3.14-.28 5.93.31 8.24 1.65 4.64 2.68 7.62 8.47 7.62 17.08V444.7c0 12.79-9.21 28.74-20.28 35.14l-64.3 37.12c-7.45 4.3-13.96 4.61-18.6 1.94-4.63-2.68-7.61-8.48-7.61-17.08V294.06c0-12.78 9.2-28.73 20.28-35.13l64.3-37.12c3.72-2.15 7.21-3.3 10.35-3.59z" color="#000" fill="#002a5e"></path><path d="M593.67 215.99v-1h.02l-.02 1zm21.16 36.92l.87.5-.87-.5zM328.28 96.3c0 .54-.4.77-.87.5a1.91 1.91 0 01-.87-1.5l1.74 1zm286.55 344.4l.87.5-.87-.5zM593.69 215c11.08 6.68 22 23.82 22 38.4l-1.73-1c0-13.38-10.07-29.25-20.31-35.43l.04-1.97zM357.13 78.42l236.54 136.57v2L357.13 80.42v-2zM326.54 95.3c0-7.77 3.62-14.3 9.19-17.74 5.57-3.45 13.2-3.87 21.4.86v2c-7.6-4.39-14.82-4.06-20.16-.75-5.35 3.3-8.7 9.52-8.7 16.63l-1.73-1zM615.7 441.2c0 18.74-12.38 25.42-27.22 19.79l-.3-2.14c14.16 5.37 25.78-1.05 25.78-18.64l1.74 1zm0-187.8v187.8l-1.74-1V252.4l1.74 1z" fill="#002A5E"></path><path d="M592.67 216.99v-1h.02l-.02 1zm21.16 36.92l.87.5-.87-.5zM328.28 97.3c0 .54-.4.77-.87.5a1.91 1.91 0 01-.87-1.5l1.74 1zm285.55 344.4l.87.5-.87-.5zM592.69 216c11.08 6.68 22 23.82 22 38.4l-1.73-1c0-13.38-10.07-29.25-20.31-35.43l.04-1.97zM356.13 79.42l236.54 136.56v2L356.13 81.43v-2zM326.54 96.3c0-8.24 3.35-14.79 8.69-18.12 5.33-3.33 12.73-3.48 20.9 1.24v2c-7.62-4.4-14.58-4.3-19.66-1.13s-8.2 9.37-8.2 17.01l-1.73-1zM614.7 442.2c0 9.4-3.88 15.76-9.33 18.8-5.43 3.04-12.51 2.83-19.06-1.1l.04-1.97c5.95 3.57 12.62 3.85 17.81.94 5.18-2.9 8.8-8.9 8.8-17.66l1.74 1zm0-187.8v187.8l-1.74-1V253.4l1.74 1z" fill="#002A5E"></path><path d="M344.4 76.85c-3.49-.31-6.67.34-9.37 1.9-5.4 3.11-8.62 9.73-8.62 18.8v187.97c0 13.73 9.4 30 21.29 36.87l236.54 136.57c7.86 4.53 15.2 5.05 20.6 1.94 5.4-3.12 8.61-9.74 8.61-18.8V254.11c0-13.72-9.4-30-21.28-36.87L355.63 80.7c-3.93-2.27-7.73-3.54-11.22-3.84zm-.13 1.98c3.14.28 6.63 1.44 10.36 3.59l236.54 136.57c11.07 6.39 20.28 22.34 20.28 35.13v187.97c0 8.6-2.98 14.4-7.61 17.08-4.64 2.67-11.15 2.36-18.6-1.95L348.7 320.66c-11.08-6.4-20.29-22.35-20.29-35.14V97.55c0-8.6 2.99-14.4 7.62-17.07a13.77 13.77 0 018.24-1.65z" color="#000" fill="#002a5e"></path><path d="M386.09 590.62l-.87.5h.01l.01.01.85-.5zm42.55-.13l.87.5-.87-.5zm-278.9-169.86c.48-.28.48-.73 0-1a1.91 1.91 0 00-1.73 0l1.73 1zm441.54 75.96l.87.5-.87-.5zm-206.04 94.54c11.33 6.26 31.63 7.15 44.27-.14l-1.73-1c-11.6 6.7-30.37 5.9-40.84.12l-1.7 1.02zM148.68 454.56l236.54 136.56 1.73-1-236.54-136.56-1.73 1zm-.67-34.93c-6.73 3.88-10.58 10.28-10.78 16.82-.2 6.55 3.26 13.38 11.45 18.1l1.73-1c-7.6-4.38-10.92-10.8-10.73-17.07.2-6.29 3.9-12.3 10.06-15.85l-1.73-1zm444.14 77.46c16.22-9.37 15.82-23.42 3.52-33.47l-2 .82c11.73 9.58 11.99 22.85-3.25 31.65l1.73 1zm-162.64 93.9l162.64-93.9-1.73-1-162.64 93.9 1.73 1z" fill="#002A5E"></path><path d="M386.45 589.26l-.86.5h.02l.84-.5zm42.56-.14l.87.5-.87-.5zm-278.4-169c.48-.27.48-.72 0-1a1.92 1.92 0 00-1.74 0l1.74 1zm441.04 75.1l.87.5-.87-.5zM385.6 589.77c11.33 6.25 31.63 7.15 44.27-.15l-1.74-1c-11.6 6.7-30.37 5.9-40.84.13l-1.7 1.02zM149.04 453.19L385.6 589.76l1.73-1-236.54-136.57-1.74 1zm-.16-34.06c-7.14 4.12-11.14 10.3-11.35 16.58-.22 6.29 3.35 12.76 11.51 17.48l1.74-1c-7.62-4.4-11.01-10.48-10.8-16.46.2-5.98 4.01-11.78 10.63-15.6l-1.74-1zm443.63 76.6c8.15-4.7 11.7-11.24 11.62-17.48-.09-6.22-3.8-12.26-10.48-15.96l-1.7 1.02c6.08 3.37 9.65 9 9.73 14.95.08 5.94-3.31 12.08-10.9 16.46l1.74 1zm-162.63 93.9l162.63-93.9-1.73-1-162.64 93.9 1.74 1z" fill="#002A5E"></path><path d="M333.97 319.26c-7.67 0-15.35 1.71-21.29 5.14l-162.79 94c-7.85 4.53-11.98 10.62-11.98 16.86 0 6.23 4.13 12.33 11.98 16.86L386.44 588.7c11.88 6.86 30.68 6.86 42.57 0l162.78-93.99c7.86-4.53 11.98-10.63 11.98-16.86 0-6.23-4.12-12.33-11.98-16.87L355.25 324.4c-5.94-3.43-13.61-5.14-21.28-5.14zm0 2.08c7.37 0 14.75 1.6 20.28 4.8L590.8 462.7c7.45 4.3 10.98 9.79 10.98 15.14 0 5.35-3.53 10.83-10.98 15.13l-162.78 93.99c-11.08 6.39-29.5 6.39-40.57 0L150.89 450.39c-7.45-4.3-10.98-9.78-10.98-15.13 0-5.35 3.53-10.84 10.98-15.14l162.8-93.98c5.53-3.2 12.9-4.8 20.28-4.8z" color="#000" fill="#002a5e"></path><path d="M441.44 607.9c-.4-.23-.64-.54-.64-.87 0-.33.23-.65.63-.88.4-.23.96-.37 1.53-.37.57 0 1.12.14 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.36zm-48.77-28.15c-.4-.23-.63-.54-.63-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.37.4.23.64.54.64.88 0 .33-.23.64-.64.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.37zm0 56.31c-.4-.23-.63-.55-.63-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.64.55.64.88 0 .33-.23.65-.64.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.52-.37zM343.9 607.9c-.4-.23-.63-.54-.63-.87 0-.33.23-.65.63-.88.4-.23.95-.37 1.52-.37.57 0 1.12.14 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm85.34-7.03c-.4-.23-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.36zm-48.76-28.15c-.4-.24-.64-.55-.64-.88 0-.33.23-.65.64-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.36zm0 56.3c-.4-.23-.64-.55-.64-.88 0-.33.23-.64.64-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.52-.37zm-48.78-28.15c-.4-.23-.62-.55-.62-.88 0-.33.22-.65.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.23.64.55.64.88 0 .33-.23.65-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zm85.35-7.04c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.52-.36.58 0 1.13.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.53.37-.57 0-1.12-.13-1.52-.37zm-48.77-28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.96-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.36zm0 56.31c-.4-.24-.63-.56-.63-.88 0-.34.23-.65.63-.88.4-.24.96-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.54.63.88 0 .32-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.37zm-48.77-28.16c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.53-.37zm85.35-7.03c-.4-.24-.63-.56-.63-.89 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.96.37-1.53.37-.57 0-1.12-.13-1.52-.37zm-48.76-28.16c-.41-.23-.64-.55-.64-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.52.36-.58 0-1.13-.13-1.53-.36zm0 56.31c-.41-.24-.64-.55-.64-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.13-.13-1.53-.36zm-48.78-28.15c-.4-.24-.63-.56-.63-.89 0-.33.23-.64.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.52.37-.58 0-1.12-.13-1.53-.37zm121.92 28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.12-.13-1.53-.36zm-48.76-28.15c-.4-.24-.64-.56-.64-.89 0-.33.23-.64.64-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.52-.37zm0 56.3c-.4-.23-.64-.55-.64-.88 0-.33.23-.64.64-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.23-.95.37-1.52.37-.57 0-1.12-.14-1.52-.37zm-48.78-28.15c-.4-.24-.62-.55-.62-.88 0-.33.22-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.52.37.4.23.64.55.64.88 0 .33-.23.64-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zm85.35-7.05c-.4-.23-.63-.54-.63-.87 0-.33.23-.65.63-.88.4-.23.95-.37 1.52-.37.58 0 1.13.14 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm-48.77-28.15c-.4-.23-.63-.54-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.37.4.23.63.54.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.37zm0 56.31c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.53-.37zm-48.77-28.16c-.4-.23-.63-.54-.63-.87 0-.33.23-.65.63-.88.4-.23.96-.37 1.53-.37.57 0 1.12.14 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.36zm85.35-7.03c-.4-.23-.63-.55-.63-.88 0-.33.22-.65.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zm-48.76-28.15c-.41-.24-.64-.55-.64-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.13-.13-1.53-.36zm0 56.3c-.41-.23-.64-.55-.64-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.52.37-.58 0-1.13-.13-1.53-.37zm-48.78-28.15c-.4-.23-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.52.36-.58 0-1.12-.13-1.53-.36zm85.35-7.04c-.4-.23-.63-.55-.63-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.64.55.64.88 0 .33-.23.65-.64.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.52-.37zm-48.77-28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm0 56.31c-.4-.24-.63-.56-.63-.88 0-.34.23-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.53.37.4.23.63.54.63.88 0 .32-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.37zm-48.77-28.16c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.52-.36.58 0 1.13.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.53.37-.57 0-1.11-.13-1.52-.37zm121.92 28.16c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.52-.37.58 0 1.13.13 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm-48.77-28.16c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.53-.37zm0 56.31c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.23.95-.37 1.53-.37.57 0 1.12.14 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.12-.13-1.53-.36zm-48.77-28.15c-.4-.24-.63-.56-.63-.88 0-.34.23-.65.63-.88.4-.24.96-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.54.63.88 0 .32-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.37zm85.35-7.04c-.4-.24-.63-.55-.63-.88 0-.33.22-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zM356.1 586.8c-.41-.24-.64-.56-.64-.89 0-.33.23-.64.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.52.37-.58 0-1.13-.13-1.53-.37zm0 56.3c-.41-.23-.64-.55-.64-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.37-1.52.37-.58 0-1.13-.14-1.53-.37zm-48.78-28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.12-.13-1.53-.36zm85.35-7.05c-.4-.23-.63-.54-.63-.87 0-.33.22-.65.63-.88.4-.23.95-.37 1.52-.37.57 0 1.12.14 1.52.37.4.23.64.55.64.88 0 .33-.23.64-.64.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.36zm-48.77-28.15c-.4-.23-.63-.54-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.37.4.23.63.54.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.37zm0 56.31c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.53.37-.57 0-1.12-.13-1.52-.37zm-48.77-28.16c-.4-.23-.63-.54-.63-.87 0-.33.23-.65.63-.88.4-.23.95-.37 1.52-.37.58 0 1.13.14 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.11-.13-1.52-.36zm85.35-7.03c-.4-.23-.64-.55-.64-.88 0-.33.23-.65.64-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.23.63.55.63.88 0 .33-.22.65-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.36zm-48.78-28.15c-.4-.24-.62-.55-.62-.88 0-.33.22-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.52.37.4.23.64.55.64.88 0 .33-.23.64-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zm0 56.3c-.4-.23-.62-.55-.62-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.64.55.64.88 0 .33-.23.65-.63.88-.4.24-.96.37-1.53.37-.57 0-1.12-.13-1.52-.37zm-48.76-28.15c-.4-.23-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.52-.36.58 0 1.12.13 1.53.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm121.92 28.15c-.4-.23-.63-.55-.63-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.96.37-1.53.37-.57 0-1.12-.13-1.52-.37zm-48.76-28.15c-.41-.23-.64-.55-.64-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.52.36-.58 0-1.13-.13-1.53-.36zm0 56.31c-.41-.24-.64-.55-.64-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.53-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.52.36-.58 0-1.13-.13-1.53-.36zm-48.78-28.16c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.52.37-.58 0-1.12-.13-1.53-.37zm85.35-7.03c-.4-.24-.63-.56-.63-.88 0-.34.22-.65.63-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.52.37.4.23.64.54.64.88 0 .32-.23.64-.64.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.37zm-48.77-28.16c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.24.63.55.63.88 0 .33-.23.65-.63.88-.4.24-.95.37-1.53.37-.57 0-1.12-.13-1.52-.37zm0 56.31c-.4-.23-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.53.36.4.23.63.55.63.88 0 .33-.23.65-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm-48.77-28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.52-.37.58 0 1.13.13 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.11-.13-1.52-.36zm85.35-7.04c-.4-.24-.64-.55-.64-.88 0-.33.23-.65.64-.88.4-.24.95-.37 1.52-.37.57 0 1.12.13 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.52-.36zM331.7 586.8c-.4-.24-.62-.56-.62-.89 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.64.55.64.88 0 .33-.23.65-.63.88-.4.24-.96.37-1.53.37-.57 0-1.12-.13-1.52-.37zm0 56.3c-.4-.23-.62-.55-.62-.88 0-.33.22-.64.63-.88.4-.23.95-.36 1.52-.36.57 0 1.12.13 1.52.36.4.24.64.55.64.88 0 .33-.23.65-.63.88-.4.23-.96.37-1.53.37-.57 0-1.12-.14-1.52-.37zm-48.76-28.15c-.4-.24-.63-.55-.63-.88 0-.33.23-.65.63-.88.4-.24.95-.37 1.52-.37.58 0 1.12.13 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.95.36-1.53.36-.57 0-1.12-.13-1.52-.36zm85.34-7.05c-.4-.23-.63-.54-.63-.87 0-.33.23-.65.63-.88.4-.23.96-.37 1.53-.37.57 0 1.12.14 1.52.37.4.23.63.55.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.36zm-48.77-28.15c-.4-.23-.63-.54-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.37.4.23.63.54.63.88 0 .33-.22.64-.63.88-.4.23-.95.36-1.52.36-.57 0-1.12-.13-1.53-.37zm0 56.31c-.4-.23-.63-.55-.63-.88 0-.33.23-.64.63-.88.4-.23.96-.36 1.53-.36.57 0 1.12.13 1.52.36.4.24.63.55.63.88 0 .33-.22.65-.63.88-.4.24-.95.37-1.52.37-.57 0-1.12-.13-1.53-.37zm-48.76-28.16c-.4-.23-.63-.54-.63-.87 0-.33.22-.65.63-.88.4-.23.95-.37 1.52-.37.57 0 1.12.14 1.53.37.4.23.63.55.63.88 0 .33-.23.64-.63.88-.4.23-.96.36-1.53.36-.57 0-1.12-.13-1.52-.36zm296.12-295.8c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.1.4.24.8.65 1.08 1.15.28.5.44 1.03.44 1.5zm.01 56.31c0 .47-.17.82-.45.99-.29.16-.67.12-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.24.8.64 1.08 1.14.28.5.45 1.03.45 1.5zm48.76-28.15c0 .46-.16.82-.45.98-.28.17-.67.13-1.08-.1-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.13 1.08.1.4.24.79.65 1.07 1.14.29.5.45 1.04.45 1.5zm0 56.31c0 .47-.16.82-.44.99-.3.16-.68.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.29-.16.67-.13 1.08.1.4.24.79.65 1.08 1.15.28.5.44 1.03.44 1.5zm-48.77-70.39c0 .46-.16.82-.44.99-.29.16-.68.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.13 1.08.1.4.24.8.65 1.08 1.15.28.5.44 1.03.44 1.5zm.01 56.31c0 .47-.16.82-.45.99-.29.16-.67.12-1.08-.11-.4-.24-.79-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.1.4.24.8.65 1.08 1.15.29.5.45 1.03.45 1.5zm48.76-28.16c0 .47-.16.83-.45 1-.28.16-.67.12-1.08-.12-.4-.23-.79-.64-1.07-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.08.12.4.23.79.64 1.07 1.13.29.5.45 1.04.45 1.5zm0 56.32c0 .46-.16.82-.44.98-.3.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .29-.16.67-.12 1.08.12.4.23.79.64 1.08 1.13.28.5.44 1.04.44 1.5zm-48.77-70.4c0 .47-.16.83-.44 1-.29.16-.68.12-1.08-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.12.4.23.8.64 1.08 1.13.28.5.44 1.04.44 1.5zm.01 56.32c0 .46-.16.82-.45.98-.29.17-.67.13-1.08-.1-.4-.24-.79-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm48.76-28.16c0 .47-.16.82-.45.99-.28.17-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.46.16-.82.45-.98.28-.17.67-.13 1.08.1.4.24.79.65 1.07 1.14.29.5.45 1.04.45 1.5zm0 56.31c0 .47-.16.83-.44 1-.29.16-.68.12-1.08-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .29-.16.67-.12 1.08.11.4.24.79.65 1.08 1.14.28.5.44 1.04.44 1.5zm-48.77-70.39c0 .47-.16.82-.44.99-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.46.16-.82.44-.98.29-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm.01 56.31c0 .47-.16.83-.45 1-.29.16-.67.12-1.08-.12-.4-.23-.79-.64-1.08-1.13a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm48.76-28.14c0 .46-.16.81-.45.98-.28.16-.67.12-1.07-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.12 1.08.11.4.23.79.64 1.07 1.14.29.5.45 1.03.45 1.5zm0 56.3c0 .47-.16.82-.44.99-.29.16-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.29-.16.67-.12 1.08.11.4.24.79.64 1.08 1.14.28.5.44 1.03.44 1.5zm-36.58-119.66c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.11-.4-.23-.8-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.23.8.64 1.08 1.14.28.5.44 1.03.44 1.5zm.01 56.31c0 .47-.17.82-.45.99-.29.16-.67.12-1.08-.11-.4-.23-.79-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.23.8.64 1.08 1.14.28.5.45 1.03.45 1.5zm48.76-28.15c0 .46-.16.82-.45.98-.28.17-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-.99.28-.17.67-.13 1.08.1.4.24.79.65 1.07 1.15.29.49.45 1.03.45 1.5zm0 56.3c0 .47-.16.83-.44 1-.29.16-.68.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.17-.82.45-.99.29-.16.67-.13 1.08.1.4.24.79.65 1.08 1.15.28.5.44 1.03.44 1.5zm-48.76-70.38c0 .46-.17.82-.45.98-.29.17-.67.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm0 56.31c0 .47-.16.82-.45.99-.28.16-.67.12-1.08-.11-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.13 1.07.1.4.24.8.65 1.08 1.15.29.5.45 1.03.45 1.5zm48.76-28.16c0 .47-.16.83-.45 1-.28.16-.67.12-1.07-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.08.11.4.24.79.65 1.08 1.14.28.5.44 1.04.44 1.5zm0 56.32c0 .46-.16.82-.44.98-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.17-.83.45-1 .29-.16.67-.12 1.08.12.4.23.8.64 1.08 1.13.28.5.44 1.04.44 1.5zm-48.76-70.39c0 .46-.17.82-.45.98-.29.17-.67.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm0 56.3c0 .47-.16.83-.45 1-.28.16-.67.12-1.08-.11-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.07.12.4.23.8.64 1.08 1.13.29.5.45 1.04.45 1.5zm48.76-28.15c0 .47-.16.82-.45.99-.28.16-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.46.16-.82.45-.99.28-.16.67-.12 1.08.11.4.24.79.64 1.08 1.14.28.5.44 1.04.44 1.5zm0 56.31c0 .47-.16.83-.44 1-.29.16-.68.12-1.08-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.45-1.5c0-.47.17-.83.45-1 .29-.16.67-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm-48.76-70.39c0 .47-.17.82-.45.99-.29.16-.67.13-1.08-.1-.4-.24-.79-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm0 56.31c0 .47-.16.83-.45 1-.28.16-.67.12-1.08-.12-.4-.23-.79-.64-1.07-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.07.11.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm48.76-28.15c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.11-.4-.23-.8-.64-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.17-.82.45-.99.29-.16.67-.12 1.08.11.4.23.79.64 1.08 1.14.28.5.44 1.03.44 1.5zm0 56.31c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.24.8.64 1.08 1.14.28.5.44 1.03.44 1.5zm-36.57-119.66c0 .46-.16.82-.45.99-.29.16-.67.12-1.08-.11-.4-.24-.79-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.13 1.08.1.4.24.8.65 1.08 1.15.29.5.45 1.03.45 1.5zm0 56.31c0 .47-.16.82-.45.99-.28.16-.67.12-1.08-.11-.4-.23-.79-.64-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.12 1.07.11.4.23.8.64 1.08 1.14.29.5.45 1.03.45 1.5zm48.76-28.15c0 .46-.16.82-.44.98-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .29-.16.67-.12 1.08.12.4.23.79.64 1.08 1.13.28.5.44 1.04.44 1.5zm0 56.31c0 .46-.16.82-.44.98-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.13 1.08.1.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm-48.76-70.39c0 .46-.16.82-.45.98-.29.17-.67.13-1.08-.1-.4-.24-.79-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.12.4.23.8.64 1.08 1.13.29.5.45 1.04.45 1.5zm0 56.31c0 .46-.16.82-.45.98-.28.17-.67.13-1.08-.1-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.17.67-.13 1.07.1.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm48.76-28.16c0 .47-.16.83-.44 1-.29.16-.68.12-1.08-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .29-.16.67-.12 1.08.11.4.24.79.65 1.08 1.14.28.5.44 1.04.44 1.5zm0 56.32c0 .46-.16.82-.44.98-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm-48.76-70.4c0 .47-.16.83-.45 1-.28.16-.67.12-1.08-.12-.4-.23-.79-.64-1.08-1.13a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .3-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm0 56.31c0 .47-.16.83-.45 1-.28.16-.67.12-1.07-.12-.4-.23-.8-.64-1.08-1.13a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.08.12.4.23.79.64 1.07 1.13.29.5.45 1.04.45 1.5zm48.76-28.14c0 .46-.16.81-.44.98-.29.16-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.24.8.64 1.08 1.14.28.5.44 1.03.44 1.5zm0 56.3c0 .47-.16.82-.44.99-.29.16-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm-48.76-70.39c0 .47-.16.82-.45.99-.28.16-.67.13-1.08-.1-.4-.24-.79-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.46.16-.82.44-.98.3-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.29.5.45 1.03.45 1.5zm0 56.31c0 .47-.16.82-.45.99-.28.17-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.46.16-.82.45-.98.28-.17.67-.13 1.08.1.4.24.79.65 1.07 1.14.29.5.45 1.04.45 1.5zm48.76-28.15c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.1.4.24.8.65 1.08 1.15.28.5.44 1.03.44 1.5zm0 56.31c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.24.8.64 1.08 1.14.28.5.44 1.03.44 1.5zm-36.57-119.66c0 .46-.16.82-.45.98-.28.17-.67.13-1.08-.1-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.13 1.07.1.4.24.8.65 1.08 1.15.29.5.45 1.03.45 1.5zm0 56.31c0 .47-.16.82-.45.99-.28.16-.67.12-1.08-.11-.4-.24-.79-.64-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.12 1.07.1.4.24.8.65 1.08 1.15.29.5.45 1.03.45 1.5zm48.76-28.15c0 .46-.16.82-.44.98-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.17-.83.45-1 .29-.16.67-.12 1.08.12.4.23.8.64 1.08 1.13.28.5.44 1.04.44 1.5zm.01 56.31c0 .46-.17.82-.45.98-.29.17-.67.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm-48.77-70.39c0 .46-.16.82-.45.98-.28.17-.67.13-1.08-.1-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.07.12.4.23.8.64 1.08 1.13.29.5.45 1.04.45 1.5zm0 56.3c0 .47-.16.83-.45 1-.28.16-.67.12-1.07-.11-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-.99.28-.17.67-.13 1.08.1.4.24.79.65 1.07 1.15.29.49.45 1.03.45 1.5zm48.76-28.15c0 .47-.16.82-.44.99-.29.17-.68.13-1.08-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.44 1.04.44 1.5zm.01 56.31c0 .47-.17.83-.45 1-.29.16-.67.12-1.08-.12-.4-.23-.79-.64-1.08-1.13a3.13 3.13 0 01-.44-1.5c0-.47.16-.83.44-1 .29-.16.68-.12 1.08.11.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm-48.77-70.39c0 .47-.16.82-.45.99-.28.16-.67.13-1.08-.1-.4-.24-.79-.65-1.07-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.07.11.4.24.8.65 1.08 1.14.29.5.45 1.04.45 1.5zm0 56.32c0 .46-.16.82-.45.98-.28.17-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.14a3.13 3.13 0 01-.45-1.5c0-.47.16-.83.45-1 .28-.16.67-.12 1.08.12.4.23.79.64 1.07 1.13.29.5.45 1.04.45 1.5zm48.76-28.16c0 .47-.16.82-.44.99-.29.16-.68.12-1.08-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.11.4.24.8.64 1.08 1.14.28.5.44 1.03.44 1.5zm.01 56.31c0 .47-.17.82-.45.99-.29.16-.67.13-1.08-.1-.4-.24-.79-.65-1.08-1.15a3.13 3.13 0 01-.44-1.5c0-.46.16-.82.44-.98.29-.17.68-.13 1.08.1.4.24.8.65 1.08 1.14.28.5.45 1.04.45 1.5zm-48.77-70.39c0 .47-.16.82-.45.99-.28.16-.67.12-1.08-.1-.4-.24-.79-.65-1.07-1.15a3.13 3.13 0 01-.45-1.5c0-.47.16-.82.45-.99.28-.16.67-.12 1.07.11.4.24.8.64 1.08 1.14.29.5.45 1.03.45 1.5zm0 56.31c0 .47-.16.82-.45.99-.28.16-.67.13-1.07-.1-.4-.24-.8-.65-1.08-1.15a3.13 3.13 0 01-.45-1.5c0-.46.16-.82.45-.99.28-.16.67-.12 1.08.11.4.24.79.64 1.08 1.14.28.5.44 1.04.44 1.5zm48.77-28.16c0 .48-.17.83-.45 1-.29.16-.67.12-1.08-.11-.4-.24-.8-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.44-.99.29-.16.68-.12 1.08.1.4.24.8.65 1.08 1.15.28.5.45 1.03.45 1.5zm0 56.32c0 .47-.16.82-.45.99-.28.16-.67.12-1.08-.11-.4-.23-.79-.64-1.08-1.14a3.13 3.13 0 01-.44-1.5c0-.47.16-.82.45-.99.28-.16.67-.12 1.07.11.4.23.8.64 1.08 1.14.29.5.45 1.03.45 1.5zM225.7 276.21c0 .37.13.65.35.78.22.13.53.1.85-.09.31-.18.62-.5.84-.89.23-.39.35-.81.35-1.18 0-.37-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.12.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.89.22-.39.35-.81.35-1.18 0-.37-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-38.29-22.1c0 .37.13.64.35.77.23.13.53.1.85-.08.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.09-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.65.35.77.23.13.53.1.85-.08.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.78-.22-.13-.52-.1-.84.09-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm38.29-55.26c0 .36.13.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.23.39-.35.8-.35 1.18zm0 44.21c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.18zm-38.29-22.11c0 .37.13.65.35.78.23.13.53.1.85-.09.32-.18.62-.5.84-.9.23-.38.36-.8.36-1.17 0-.37-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.65.35.78.23.13.53.1.85-.09.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.64-.35-.77-.22-.13-.52-.1-.84.08-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm38.29-55.26c0 .36.13.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.84.08-.32.19-.63.51-.85.9-.23.39-.35.81-.35 1.18zm0 44.21c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.08-.31.19-.62.51-.84.9-.23.39-.35.81-.35 1.18zm-38.29-22.1c0 .36.13.64.35.77.23.13.53.1.85-.08.32-.19.62-.5.84-.9.23-.39.36-.81.36-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.19-.62.5-.85.9-.22.38-.35.8-.35 1.18zm0 44.2c0 .37.13.65.35.78.23.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.39.35-.81.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.38-.35.8-.35 1.18zm38.29-55.26c0 .37.13.65.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.84.09-.32.18-.63.5-.85.9-.23.38-.35.8-.35 1.17zm0 44.21c0 .37.12.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.77-.23-.13-.53-.1-.85.08-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-38.29-22.1c0 .36.13.64.35.77.23.13.53.1.85-.08.32-.19.62-.5.84-.9.23-.38.36-.8.36-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.08-.32.19-.62.5-.85.9-.22.39-.35.81-.35 1.18zm0 44.21c0 .36.13.64.35.77.23.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.38.35-.8.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.39-.35.81-.35 1.18zm28.72-93.95c0 .37.12.64.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.85.09-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm0 44.21c0 .37.12.65.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.85.09-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-38.29-22.1c0 .36.13.64.35.77.23.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.38.35-.8.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.62.5-.85.9-.22.38-.35.8-.35 1.18zm0 44.21c0 .36.13.64.35.77.22.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.39.35-.8.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.38-.35.8-.35 1.18zm38.29-55.26c0 .36.12.64.35.77.22.13.53.1.84-.09.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.77-.22-.13-.53-.1-.85.08-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm0 44.2c0 .37.12.65.35.78.22.13.53.1.84-.09.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-38.29-22.1c0 .36.13.64.35.77.23.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.78-.22-.13-.53-.1-.84.08-.32.19-.62.51-.85.9-.22.39-.35.81-.35 1.18zm0 44.2c0 .38.13.65.35.78.22.13.53.1.85-.08.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.78-.22-.13-.53-.1-.84.09-.32.18-.63.5-.85.89-.22.39-.35.81-.35 1.18zm38.29-55.26c0 .37.12.65.35.78.22.13.53.1.84-.08.32-.19.63-.51.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.17zm0 44.22c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.62-.5.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.18zm-38.29-22.11c0 .37.13.65.35.78.22.13.53.1.85-.09.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.65.35.77.22.13.53.1.85-.08.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm38.29-55.26c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.39-.35.81-.35 1.18zm0 44.2c0 .37.12.65.34.78.23.13.53.1.85-.08.32-.19.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.08-.32.19-.62.5-.84.9-.23.39-.35.81-.35 1.18zM177.84 337c0 .37.13.65.35.78.22.13.53.1.85-.08.31-.19.62-.51.84-.9.23-.39.35-.81.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.89.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.38-.35.8-.35 1.17zm28.72-93.94c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.39-.35.8-.35 1.18zm0 44.21c0 .36.12.64.34.77.23.13.53.1.85-.08.32-.19.62-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.19-.62.5-.84.9-.23.38-.35.8-.35 1.18zm-38.29-22.11c0 .37.13.65.35.78.22.13.53.1.85-.09.31-.18.62-.5.84-.89.23-.39.35-.81.35-1.18 0-.37-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.89.22-.39.35-.81.35-1.18 0-.37-.13-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm38.29-55.26c0 .37.12.64.35.77.22.13.53.1.84-.08.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.09-.31.18-.62.5-.84.89-.23.39-.35.81-.35 1.18zm0 44.21c0 .37.12.64.34.77.23.13.53.1.85-.08.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.09-.32.18-.62.5-.84.89-.23.39-.35.81-.35 1.18zm-38.29-22.1c0 .36.13.64.35.77.22.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.39.35-.81.35-1.18 0-.36-.12-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.38-.35.8-.35 1.18zm0 44.21c0 .36.13.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.19-.63.5-.85.9-.22.39-.35.8-.35 1.18zm38.29-55.27c0 .37.12.65.35.77.22.13.53.1.84-.08.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.09-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-.01 44.21c0 .37.13.65.35.78.23.13.53.1.85-.09.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.77-.23-.13-.53-.1-.85.08-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm-38.28-22.1c0 .36.13.64.35.77.22.13.53.1.85-.08.31-.19.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.78-.22-.13-.53-.1-.84.08-.32.19-.63.51-.85.9-.22.39-.35.81-.35 1.18zm0 44.21c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.85.09-.31.18-.62.5-.84.89-.23.39-.35.81-.35 1.18zm38.29-55.27c0 .37.12.65.35.78.22.13.53.1.84-.08.32-.19.62-.51.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-.01 44.21c0 .37.13.65.35.78.23.13.53.1.85-.09.32-.18.62-.5.85-.89.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.19-.62.5-.85.9-.22.38-.35.8-.35 1.17zm-38.28-22.1c0 .37.13.65.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.84.09-.32.18-.63.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.12.64.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.85.09-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm28.72-93.94c0 .36.12.64.34.77.23.13.53.1.85-.09.32-.18.62-.5.85-.89.22-.39.35-.81.35-1.18 0-.37-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm-.01 44.2c0 .37.13.65.35.78.23.13.53.1.85-.09.32-.18.62-.5.84-.89.23-.39.35-.81.35-1.18 0-.37-.12-.64-.34-.77-.23-.13-.53-.1-.85.08-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm-38.28-22.1c0 .37.13.64.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.22-.13-.53-.1-.84.09-.32.18-.63.5-.85.89-.23.39-.35.81-.35 1.18zm0 44.21c0 .37.12.64.35.77.22.13.53.1.84-.08.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.09-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm38.29-55.26c0 .36.12.64.34.77.23.13.53.1.85-.08.32-.19.62-.5.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.32.19-.62.5-.84.9-.23.38-.35.8-.35 1.18zm-.01 44.21c0 .36.13.64.35.77.23.13.53.1.85-.08.32-.19.62-.5.84-.9.23-.39.35-.81.35-1.18 0-.36-.12-.64-.34-.77-.23-.13-.53-.1-.85.08-.32.19-.62.5-.85.9-.22.38-.35.8-.35 1.18zm-38.28-22.11c0 .37.13.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.64-.35-.77-.22-.13-.53-.1-.84.08-.32.18-.63.5-.85.9-.23.38-.35.8-.35 1.17zm0 44.21c0 .37.12.65.35.78.22.13.53.1.84-.09.32-.18.63-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.18-.62.5-.84.9-.23.38-.35.8-.35 1.17zm38.28-55.26c0 .36.13.64.35.77.23.13.53.1.85-.08.32-.19.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.78-.23-.13-.53-.1-.85.08-.32.19-.62.51-.85.9-.22.39-.35.81-.35 1.18zm0 44.2c0 .37.13.65.35.78.23.13.53.1.85-.08.32-.19.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.34-.78-.23-.13-.53-.1-.85.09-.32.18-.62.5-.85.89-.22.39-.35.81-.35 1.18zM158.7 337c0 .37.12.65.35.78.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.18zm0 44.21c0 .37.12.65.35.78.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.39.35-.81.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.38-.35.8-.35 1.17zm38.28-55.26c0 .37.13.65.35.78.23.13.53.1.85-.09.32-.18.62-.5.85-.9.22-.38.35-.8.35-1.17 0-.37-.13-.65-.35-.77-.23-.13-.53-.1-.85.08-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm0 44.21c0 .37.13.64.35.77.23.13.53.1.85-.08.31-.18.62-.5.84-.9.23-.38.35-.8.35-1.17 0-.37-.12-.65-.35-.78-.22-.13-.53-.1-.84.09-.32.18-.62.5-.85.9-.22.38-.35.8-.35 1.17zm-38.28-22.1c0 .36.12.64.35.77.22.13.53.1.84-.08.32-.19.63-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.22-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.39-.35.81-.35 1.18zm0 44.21c0 .36.12.64.35.77.22.13.52.1.84-.08.32-.19.62-.5.85-.9.22-.38.35-.8.35-1.18 0-.36-.13-.64-.35-.77-.23-.13-.53-.1-.85.08-.31.19-.62.5-.84.9-.23.39-.35.81-.35 1.18z" fill="#002a5e" fill-opacity="0.6"></path><path d="M395.57 201.92l.87.5-.87-.5zm-133.1 76.14c0 .39.54.7 1.22.7h11.02c.68 0 1.23-.31 1.23-.7 0-.4-.55-.71-1.23-.71h-9.8v-5.66c0-.39-.55-.7-1.22-.7-.68 0-1.23.31-1.23.7v6.37zm194.1-111.15c.47-.28.46-.72-.02-1a1.91 1.91 0 00-1.74.01l1.75 1zM264.56 278.56l131.88-76.14-1.73-1-131.89 76.14 1.74 1zm131.89-76.15l60.12-35.5-1.76-.99-60.11 35.5 1.75 1z" fill="url(#image-top_svg__j)"></path><path d="M179.8 416.92l-.86.5h-.01l.88-.5zm133.11 76.13c0 .4-.55.71-1.22.71h-11.02c-.68 0-1.23-.31-1.23-.7 0-.4.55-.71 1.23-.71h9.8v-5.66c0-.39.54-.7 1.22-.7.68 0 1.22.31 1.22.7v6.37zm-2.09.5l-131.88-76.13 1.73-1 131.89 76.13-1.74 1zm-131.9-76.14l-60.1-35.5 1.74-.99 60.12 35.5-1.75 1z" fill="url(#image-top_svg__k)"></path><path d="M494.82 597.56c-.48.27-.47.72 0 1 .49.27 1.26.27 1.74 0l-1.74-1zm194.1-111.14c0-.4-.56-.71-1.24-.7l-11.02.01c-.67 0-1.22.32-1.22.71 0 .4.55.71 1.23.7l9.8-.01.03 5.65c0 .4.56.71 1.23.7.68 0 1.23-.31 1.22-.7l-.04-6.36zM496.55 598.55l192-111.63-1.74-1-192 111.64 1.74 1z" fill="url(#image-top_svg__l)"></path><path d="M284.72 98.22l1.3-.75c1.05-.61 1.69-.21 1.69 1.55v4.29c0 3.49 1.94 4.25 4.96 2.51l1.1-.64v-2.4l-.69.4c-2.07 1.2-3.04.7-3.04-1.86v-3.64c0-2.24-.86-2.7-1.89-2.63a6.67 6.67 0 001.89-4.8V86.6c0-2.56.97-4.17 3.05-5.37l.69-.4v-2.4l-1.11.64a9.5 9.5 0 00-4.96 8.24v4.29c0 1.76-.64 2.9-1.7 3.5l-1.3.75v2.37z" fill="#002A5D"></path><path d="M662.65 305.72l10.06 11.04v-2.16l-8.42-9.13 8.42.59v-2.19l-10.06-.57v2.42zm11.77 16.18l1.92 1.1 6.02-16.58-1.9-1.1-6.04 16.58zm19.71 2v-2.43l-10.05-11.04v2.19l8.41 9.13-8.41-.59v2.16l10.05.58zM200.8 578.7l-2.9-1.68-15.3 3.55 2.47 1.43 12.18-2.93-5.05 7.05 2.47 1.42 6.13-8.84zm9.1 5.1l7.35-4.25-2.1-1.21-7.36 4.24 2.1 1.22z" opacity="0.9" fill="#002A5D"></path><defs><radialGradient id="image-top_svg__a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(111.69937 -136.54337 134.38157 109.9309 513.5 531)"><stop stop-color="#006AE4" stop-opacity="0.59"></stop><stop offset="0.65" stop-color="#0065DF" stop-opacity="0.32"></stop><stop offset="1" stop-color="#0069E3" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(136.00002 96.49987 -95.40847 134.4619 218.5 301)"><stop offset="0.21" stop-color="#F8B201" stop-opacity="0.35"></stop><stop offset="1" stop-color="#F2B801" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(137.50037 -164.00021 162.145 135.94492 407.5 267)"><stop offset="0.21" stop-color="#7536E1" stop-opacity="0.25"></stop><stop offset="1" stop-color="#9D68F8" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(148.14947 108.98593 -109.58384 148.96224 541.475 185.984)"><stop offset="0.21" stop-color="#00C9DD" stop-opacity="0.5"></stop><stop offset="1" stop-color="#00C9E0" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(34.92 -296 591.86) scale(226.231 223.672)"><stop stop-color="#7347E7" stop-opacity="0.38"></stop><stop offset="0.81" stop-color="#744AE7" stop-opacity="0"></stop><stop offset="1" stop-color="#744BE7" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(154.17974 -175.87021 175.06863 153.47702 310.985 418.999)"><stop offset="0.21" stop-color="#EBA1A1" stop-opacity="0.97"></stop><stop offset="0.82" stop-color="#EBA0A0" stop-opacity="0.22"></stop><stop offset="1" stop-color="#EBA0A0" stop-opacity="0"></stop></radialGradient><radialGradient id="image-top_svg__g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(34.92 -254.81 989.44) scale(226.231 223.672)"><stop offset="0.21" stop-color="#4ADA72" stop-opacity="0.47"></stop><stop offset="1" stop-color="#3ED87B" stop-opacity="0"></stop></radialGradient><linearGradient id="image-top_svg__j" x1="451.5" y1="169.42" x2="357.36" y2="332.22" gradientUnits="userSpaceOnUse"><stop stop-color="#002A5E" stop-opacity="0"></stop><stop offset="0.83" stop-color="#002A5E"></stop></linearGradient><linearGradient id="image-top_svg__k" x1="123" y1="383.92" x2="217.59" y2="547.48" gradientUnits="userSpaceOnUse"><stop stop-color="#002A5E" stop-opacity="0"></stop><stop offset="0.83" stop-color="#002A5E"></stop></linearGradient><linearGradient id="image-top_svg__l" x1="688.03" y1="486.62" x2="591.97" y2="653.89" gradientUnits="userSpaceOnUse"><stop stop-color="#002A5E"></stop><stop offset="1" stop-color="#002A5E" stop-opacity="0"></stop></linearGradient></defs></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- companies -->
+    <section class="px-5 md:px-0  overflow-hidden mb-20 md:mb-0">
+        <div class="">
+            <h1 class="text-center text-xl font-bold dark:text-slate-200">
+                Powering mission-critical apps for the world’s best companies
+            </h1>
+            <div class="overflow-hidden lg:mx-32">
+                <ul class="flex mt-10  items-center  w-[2500px] justify-center gap-x-10 md:gap-x-20 lg:gap-x-28 slideIn ">
+                    <li>
+                        <img class="h-5" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bbc.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/AAA.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/flesh.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/usaa.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/T.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/Hr.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/Home.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/usaa.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/one.png" alt="">
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/flesh.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/usaa.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/duck.png" alt="">
+                    </li>
+
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/sth.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/nhs.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/burger.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/AAA.png" alt="">
+                    </li>
+                    <li>
+                        <img class="h-8" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/T.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction react -->
+    <section class="px-5 md:px-0 container mx-auto max-w-2xl lg:max-w-6xl  md:py-28 headline">
+        <div class=" shadow-xl rounded-3xl  bg-[#0038c9] flex flex-col-reverse md:grid md:grid-cols-2 ">
+            <div class="flex items-center p-8 md:p-10 lg:p-20">
+                <div class="">
+                    <img class="w-32" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/portals-for-rn-logo.png" alt="">
+                    <h1 class="text-slate-100 text-3xl font-bold mt-5">Introduction Portals for React Native</h1>
+                    <h3 class="text-slate-200 text-xl mt-5">Scale and move faster by inserting dynamic web content into any React Native mobile app.</h3>
+                    <button class="text-blue-500 text-sm px-2 py-1 mt-5 bg-slate-100 rounded-full font-bold">Learn More
+                        <i class="fa-solid fa-arrow-right text-blue-600"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="md:flex justify-end items-center hidden">
+                <img class="w-72  object-cover max-h-[430px]" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/84cedafa-06f9-434f-889d-334ad605057d_ionic-io-homepage-cloud-2.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Building incridible app -->
+
+    <section class="">
+        <div class="px-5 md:px-0 max-w-2xl lg:max-w-6xl container mx-auto py-28 ">
+            <div class="headline">
+                <h1 class="text-3xl md:text-5xl text-slate-900 font-bold tet-center max-w-xl mx-auto">
+                    Building incredible apps doesn’t need to be hard.
+                </h1>
+                <h4 class="text-xl mt-5 text-slate-400 text-center max-w-xl mx-auto " >
+                    Our vision is to help developers meet the need for mobile across their business. Here’s what you get with Ionic:
+                </h4>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-0 lg:gap-x-10 mt-14  ">
+
+                <div class="shadow-lg hover:shadow-xl duration-300 p-5 rounded-xl headline">
+                    <div class="">
+                        <img class="w-16" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/e8f5004e-e4e9-4642-ad6a-0678c26058a8_ionic-io-homepage-building-0.png" alt="">
+                    </div>
+                    <div class="mt-6">
+                        <h1 class="dark:text-slate-200">Continuous delivery</h1>
+                        <h3 class="text-slate-400 text-lg">Ship faster and more often with mobile CI/CD products that make building and shipping mobile apps a breeze.</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg hover:shadow-xl duration-300 p-5 rounded-xl headline">
+                    <div class="">
+                        <img class="w-16" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/7527a89b-2696-4f38-8385-c5084d1cea7c_ionic-io-homepage-building-2.png" alt="">
+                    </div>
+                    <div class="mt-6">
+                        <h1 class="dark:text-slate-200">Better apps, faster</h1>
+                        <h3 class="text-slate-400 text-lg">
+                            Slash your development time and costs with a platform that lets you write once and deploy anywhere—iOS, Android, and Web.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg hover:shadow-xl duration-300 p-5 rounded-xl headline">
+                    <div class="">
+                        <img class="w-16" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/d7a8aed7-d1dc-4756-90d4-752c3f951e5f_ionic-io-homepage-building-1.png" alt="">
+                    </div>
+                    <div class="mt-6">
+                        <h1 class="dark:text-slate-200">Ready for the future</h1>
+                        <h3 class="text-slate-400 text-lg">A flexible, future-proof foundation that's built on open standards and evolves with today's complex ecosystem.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="grid md:grid-cols-2 shadow-lg mt-20 md:mt-32 lg:mt-56  rounded-3xl bg-slate-100 dark:bg-slate-800  md:h-80 headline">
+                <div class="flex justify-center items-center">
+                    <img class="md:h-80 scale-100 md:scale-[1.5] translate-y-5" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/46d7c750-f4af-42f2-ab8e-984b69938405_ionic-io-homepage-ebook-0.png" alt="">
+                </div>
+                <div class="flex justify-center items-center h-full">
+                    <div class="p-8">
+                        <h1 class="text-slate-400 text-2xl md:text-3xl font-bold">Learn the differences between hybrid and native.</h1>
+                        <h2 class="text-2xl md:text-3xl mt-3 font-bold text-slate-800">We break down all the myths and misconceptions.</h2>
+                        <button class="bg-slate-800 font-bold mt-5 text-slate-100 rounded-full px-2 py-1 text-sm">
+                            Read the free eBook
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="grid lg:grid-cols-2 mt-20 md:mt-48 items-center ">
+                <div class="">
+                    <div class="max-w-2xl lg:max-w-md headline">
+                        <h6 class="text-lg text-slate-500 dark:text-slate-200">CROSS-PLATFORM SDK</h6>
+                        <h1 class="text-slate-800 font-bold text-4xl md:text-5xl mt-8 dark:text-slate-200">A modern, open source SDK for iOS and Android apps.</h1>
+                        <h2 class="text-slate-500 text-xl mt-8">
+                            Building high quality mobile apps is no easy task. Users expect seamless, familiar, and accessible interfaces—and developers want to build quickly.
+                        </h2>
+                        <h2 class=" text-xl mt-8 text-slate-500">
+                            <span class="border-b-2 border-b-slate-400">Ionic</span> offers seamless app UX, across iOS, Android, and the Web from a single codebase.
+                        </h2>
+                        <div class="mt-10 ">
+                            <div class="flex gap-x-5 items-center md:justify-center lg:justify-start">
+                                <div id="iosBtn" class="">
+                                    <div id="changeOne" class="rounded-xl bg-slate-900 w-12 h-12 flex justify-center items-center text-slate-50">
+                                        <i class="fab fa-apple fa-2x "></i>
+                                    </div>
+                                    <h1 class="text-center text-slate-500 mt-3">iOS</h1>
+                                </div>
+                                <div id="andriodBtn" class="">
+                                    <div id="changeTwo" class="rounded-xl bg-slate-300 w-12 h-12 flex justify-center items-center text-slate-400">
+                                        <i class="fab fa-android fa-2x "></i>
+                                    </div>
+                                    <h1 class="text-center text-slate-500 mt-3">Android</h1>
+                                </div>
+                                <div id="coustomBtn" class="">
+                                    <div id="changeThree" class="rounded-xl bg-slate-300 w-12 h-12 flex justify-center items-center text-slate-400">
+                                        <i class="fas fa-star fa-2x "></i>
+                                    </div>
+                                    <h1 class="text-center text-slate-500 mt-3">Coustom</h1>
+                                </div>
+                                <div class="h-20 border-r-2 border-r-slate-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div id="phoneImg" class="grid grid-cols-2  items-center py-20 md:py-32 md:translate-x-10 headline">
+                    
+                </div>
+            </div>
+
+            <!-- Build, deploy, -->
+            <div class="max-w-6xl container mx-auto mt-20 md:mt-52 ">
+                <div class="headline">
+                    <h1 class="text-slate-400 dark:text-slate-300">MOBILE CI/CD</h1>
+
+                    <div class="grid md:grid-cols-2 gap-x-16 mt-3">
+                        <div class="">
+                            <h1 class="text-slate-800 dark:text-slate-200 md:text-2xl lg:text-4xl font-bold max-w-sm md:max-w-3xl ">
+                                Build, deploy, and manage all your apps in a secure cloud workspace.
+                            </h1>
+                        </div>
+                        <div class="mt-5 md:mt-0">
+                            <h1 class="text-slate-500 dark:text-slate-400 text-lg mb-5 max-w-sm md:max-w-3xl" >
+                                Spend more time on what matters. Start in seconds and scale to millions with a suite of powerful cloud tools and services for every type of app.
+                            </h1>
+                            <a href="" class="text-slate-600 font-bold hover:text-slate-500  text-lg">
+                                Explore Ionic Appflow
+                                <i class="fa-solid fa-arrow-right text-slate-900 hover:text-slate-800"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="grid  lg:grid-cols-3 mt-20 gap-10 ">
+                    <div class="md:col-span-2  shadow-md hover:shadow-xl duration-500 bg-slate-00 rounded-3xl border overflow-hidden headline">
+                        <div class="relative h-[400px]">
+                                <img class="absolute h-full " src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/83e073ba-bad9-4cc9-8240-42536a63989e_ionic-io-homepage-cloud-1.png" alt="">
+                                <img class="absolute h-full right-0 opacity-50" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/84cedafa-06f9-434f-889d-334ad605057d_ionic-io-homepage-cloud-2.png" alt="">
+
+                                <div class="absolute h-full p-8">
+                                    <div class="">
+                                        <img class="w-20 mb-10 md:mb-20" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F00b3dee1-3902-4bea-ac41-9fbbfeebd20b_ionic-io-homepage-cloud-0.png&w=96&q=75" alt="">
+                                        <h1 class="text-slate-200 text-sm md:text-md uppercase">Ionic appflow</h1>
+                                        <h2 class="text-slate-50 text-xl md:text-2xl max-w-md capitalize">Fully managed cloud app delivery at the speed of developement.</h2>
+                                        <h3 class="text-slate-200 text-md md:text-lg font-bold capitalize mt-5">
+                                            build,publish,and scale your apps with ease.
+                                        </h3>
+                                        <button class="text-slate-100 px-2 py-1 text-sm mt-5 bg-white/20 rounded-full">Learn more
+                                            <i class="fa-solid fa-arrow-right text-md md:text-sm text-slate-50"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-3xl  shadow-md hover:shadow-2xl duration-500 border border-slate-300 dark:border-slate-500 overflow-hidden card-hover headline ">
+                        <div class=" shadow-mg p-8 rounded-xl  md:max-h-[400px]">
+                            <img class="w-[3.5rem] md:w-24 card-iconOne md:mb-28  lg:mb-36 duration-500" src="../dist/img/pocket (2).svg" alt="">
+                            <h1 class="text-slate-400">LIVE UPDATES</h1>
+                            <h2 class="text-slate-900 dark:text-slate-300 mt-5 text-2xl font-bold">
+                                Deploy remote live  app updates in realtime
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 dark:text-slate-300 mt-6 text-lg">Deploy live app updates immediately to your users in realtime.</h1>
+                        </div>
+                    </div>
+                    
+
+                    <div class="rounded-3xl  shadow-md hover:shadow-2xl duration-500 border border-slate-300  dark:border-slate-500 overflow-hidden card-hover headline">
+                        <div class="  p-8 rounded-xl max-h-[400px] lg:max-h-[380px]">
+                            <img class="w-[3.5rem] md:w-24 card-icon md:mb-28 lg:mb-32" src="../dist/img/codesandbox.svg" alt="">                            
+                            <h1 class="text-slate-400">NATIVE BUIDES</h1>
+                            <h2 class="text-slate-900 dark:text-slate-300 mt-5 text-2xl font-bold">
+                                Compile native binaries fir iOS and Android
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 dark:text-slate-300 mt-6 text-lg capitalize" >
+                                go from web to native with noplatform dependencies or complex build steps.
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl  shadow-md hover:shadow-2xl duration-500 border border-slate-300  dark:border-slate-500 overflow-hidden card-hover headline">
+                        <div class="  p-8 rounded-xl max-h-[400px] lg:max-h-[380px]">
+                            <img class="w-24 card-icon mb-28 lg:mb-32" src="../dist/img/external-link.svg" alt="">
+                            <h1 class="text-slate-400">APP PUBLISHING</h1>
+                            <h2 class="text-slate-900 dark:text-slate-300 mt-5 text-2xl font-bold">
+                                Deploy remote live  app updates in realtime
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 dark:text-slate-300 mt-6 text-lg">Deploy live app updates immediately to your users in realtime.</h1>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl  shadow-md hover:shadow-2xl duration-500 border border-slate-300  dark:border-slate-500 overflow-hidden card-hover headline">
+                        <div class=" shadow-mg p-8 rounded-xl max-h-[380px]">
+                            <img class="w-24 card-icon mb-28 lg:mb-32" src="../dist/img/upload-cloud (2).svg" alt="">
+                            <h1 class="text-slate-400">LIVE UPDATES</h1>
+                            <h2 class="text-slate-900 dark:text-slate-300 mt-5 text-2xl font-bold">
+                                Deploy remote live  app updates in realtime
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 dark:text-slate-300 mt-6 text-lg">Deploy live app updates immediately to your users in realtime.</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Web-first dev -->
+
+                <div class="mt-56">
+                    <h1 class="text-slate-400 text-lg text-center"> APP DEVELOPMENT</h1>
+                    <h1 class="text-center mt-16 text-slate-900 dark:text-slate-200 text-4xl md:text-5xl max-w-3xl font-bold mx-auto">
+                        Web-first dev tools for building stunning mobile experiences.
+                    </h1>
+                </div>
+
+
+                <!-- Card -->
+                <div class="grid md:grid-cols-2  lg:grid-cols-3 gap-x-10 mt-20 gap-y-10 lg:gap-y-0 ">
+                    <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 overflow-hidden card-hover">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-10 md:w-16 mb-8 md:mb-16" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F8e664efd-fcfd-4040-a3aa-cb1f4a5da31e_ionic-io-index-app-dev-ionic-logo.png&w=64&q=75" alt="">
+                            <h1 class="text-slate-800 dark:text-slate-400 text-2xl font-bold">Ionic Framework</h1>
+                            <h2 class="text-slate-400 mt-5 text-sm font-bold">
+                               HTML,CSS ,JAVASCRIPT
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.from web to native with no platform dependencies or complex build.
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 overflow-hidden card-hover">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-10 md:w-16 mb-8 md:mb-16" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F557172e6-a8fd-4f20-9dd5-4992b14d92cc_ionic-io-index-app-dev-cap-logo.png&w=64&q=75" alt="">
+                            <h1 class="text-slate-800 dark:text-slate-400 text-2xl font-bold">Ionic Framework</h1>
+                            <h2 class="text-slate-400 mt-5 text-sm font-bold">
+                               HTML,CSS ,JAVASCRIPT
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.
+                                from web to native with no platform dependencies or complex build.
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 overflow-hidden card-hover">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-10 md:w-16 mb-8 md:mb-16" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Ff8ffcecf-f7e6-4b94-b755-fada8859595b_ionic-io-index-app-dev-portals-logo.png&w=64&q=75" alt="">
+                            <h1 class="text-slate-800 dark:text-slate-400 text-2xl font-bold">Ionic Framework</h1>
+                            <h2 class="text-slate-400 mt-5 text-sm font-bold">
+                               HTML,CSS ,JAVASCRIPT
+                                <i class="fa-solid fa-arrow-right text-slate-900"></i>
+                            </h2>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.from web to native with no platform dependencies or complex build.
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- .slider -->
+    <div class="px-5 md:px-0 flex justify-between items-center mt-32 mx-auto lg:max-w-6xl max-w-2xl">
+        <div class="text-slate-900 dark:text-slate-300 text-2xl md:text-3xl font-bold  headline">
+            <h1>Ionic Open Source projects</h1>
+        </div>
+        <div class="">
+            <button class="text-sm flex items-center text-slate-100 headline bg-slate-800 px-3 md:px-2 py-1 md:py-1 rounded-full">
+                Explore <span class="hidden md:inline">Ionic projects</span>
+                <i class="fa-solid fa-arrow-right text-slate-50 text-sm md:text-md"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="px-5 md:px-0 max-w-2xl lg:max-w-[1900px] mx-auto lg:px-24 mt-16 ">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-10 gap-6 lg:gap-y-0">
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F9416584f-3b7c-40ab-a6bb-b2911608e1f3_ionic-io-homepage-open-source-cap-plugins.png&w=48&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Cap Plugin</h1>
+            </div>
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fa21a695a-f792-41f7-9194-6d1e11bd5940_ionic-io-homepage-v2-ionic-cli.png&w=48&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Ionic CLI</h1>
+            </div>
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F048d0772-326e-47c5-b7fe-70cef67b26a0_ionic-io-homepage-v2-ionicons.png&w=48&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Ionic Icons</h1>
+            </div>
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-12 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F7f50d803-132c-498d-8202-7b5cc9f76372_ionic-io-homepage-v2-stencil.png&w=64&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Stencil</h1>
+            </div>
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F8b4b8655-f8d3-4ecb-afa5-76a475784dfc_ionic-io-homepage-v2-trapeze.png&w=48&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Trapeze</h1>
+            </div>
+
+            <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500 headline">
+                <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F1ed412e4-b0d6-4916-8d2b-d5575a8c7579_ionic-io-homepage-v2-storage.png&w=48&q=75" alt="">
+    
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600 dark:text-slate-300">Storage</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code-section -->
+    <section class=" bg-[#0f1e37]">
+        <div class="lg:max-w-6xl max-w-2xl px-5 md:px-0 mx-auto mt-20 pb-32 md:py-40">
+            <div class="grid lg:grid-cols-2 justify-between">
+
+                <div class="headline">
+                    <h3 class="text-slate-300 text-sm mt-20">BUILT FOR DEVELOPERS</h3>
+                    <h1 class= "lg:text-5xl md:text-4xl text-3xl mt-5 text-slate-100">A developer-first platform. Built on open source</h1>
+                    <ul class="flex flex-col gap-y-2 mt-10 ">
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer ">
+                            <i class="fa-solid fa-check"></i>
+                            <span>World-class 
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> Documentation</span>
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>100% open source
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> Mobile SDK</span>
+                                </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>A
+                            <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> CLI </span>
+                            for building and testing
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Cross-platform
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> native bridge</span>
+                                </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>React, Angular, & Vue integrations
+                               
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-lg cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>World-wide developer
+                                <span class="border-b-2 border-slate-400 hover:border-slate-200">Community</span>
+                                </span>
+                        </li>
+                    </ul>
+                    <button class="bg-slate-100 rounded-full px-5 md:text-lg  py-3 text-slate-800 mt-14">Start Building
+                        <i class="fa-solid fa-arrow-right text-slate-800"></i>
+                    </button>
+                </div>
+
+                <div class="mt-14 md:mt-0 headline">
+                    <div class="flex justify-center">
+                        <div class="flex  lg:gap-x-3 mb-10">
+                            <button id="codeText" class="bg-slate-100 rounded-full px-3 py-1 text-slate-800">
+                                <i class="fas fa-code"></i>
+                                Code
+                            </button>
+                            <button id="demo" class=" rounded-full px-3 py-1 text-slate-100">
+                                <i class="fas fa-eye"></i>
+                                Demo
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="rounded-2xl md:p-8 bg-slate-900  pt-5 pb-10">
+
+                        <div id="lang" class="grid  grid-cols-4 gap-x-2 lg:gap-x-5 p-3">
+                            <div class="">
+                                <div id="react" class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold md:bg-slate-800 md:p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6 mt-5" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fca59091b-acc5-4bbe-a49f-9b308bdc1d56_ionic-io-homepage-developers-4.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3 hidden md:block">React</h3>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div id="angular" class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold md:bg-slate-800 md:p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6 mt-5" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F678871b0-ad17-4d70-81fe-abd41f3e658c_ionic-io-homepage-developers-5.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3 hidden md:block">Angular</h3>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div id="vue" class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold md:bg-slate-800 md:p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6 mt-5" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F22c8a3e1-04d4-492f-97e1-4a23e2f67fba_ionic-io-homepage-developers-6.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3 hidden md:block">Vue</h3>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div id="js" class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold md:bg-slate-800 md:p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6 mt-5" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F6a865ba6-49b2-47f2-84be-b33b90a88be9_ionic-io-homepage-developers-7.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3 hidden md:block">Js</h3>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="w-full ">
+                            <!-- <h1>Hello World</h1> -->
+<code class="w-full code">
+    
+</code>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class=" text-3xl lg:text-4xl font-bold text-slate-100 mt-32 headline">Developer resources</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 md:gap-x-8 mt-8">
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl headline">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fa4e54d64-0315-4d54-8b72-4100fce4ebc5_ionic-io-homepage-developers-0.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-8 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl headline">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F35a33641-010c-401a-a413-49fc4e0bc602_ionic-io-homepage-developers-1.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-6 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl headline">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F585efcf2-8a28-4fcc-bb76-3106fd43635e_ionic-io-homepage-developers-2.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-7 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl headline">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fd06098f7-609d-4f60-9c95-942a2043a85d_ionic-io-homepage-developers-3.png&w=32&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-6 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Platform -->
+    <section class="px-5 md:px-0 max-w-6xl mx-auto pt-52 pb-20 ">
+
+        <div class="grid grid-cols-12  items-center lg:max-w-6xl md:max-w-2xl mx-auto">
+            <div class="flex items-center col-span-12 lg:col-span-5 headline">
+                <div class="">
+                    <h1 class="z-10 text-slate-400">IONIC FOR ENTERPRISE</h1>
+                    <h2 class="text-slate-800 dark:text-slate-300 font-bold text-3xl md:text-5xl mt-8 z-10">
+                        A single platform for delivering enterprise digital experiences securely and at scale.
+                    </h2>
+                    <h1 class="z-10 text-slate-500 dark:text-slate-400 text-xl my-8">
+                        The Ionic Platform is designed to help enterprise teams meet the need for digital experiences across their business, by empowering their existing web teams to build, secure, and deliver incredible apps with the tools and technologies they already know and love.
+                    </h1>
+                    <a href="" class="z-10 dark:text-slate-500 text-slate-700 font-bold hover:text-slate-600">
+                        Learn how
+                        <i class="fa-solid fa-arrow-right text-lg text-slate-700 hover:text-slate-600"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 col-span-12 lg:max-w-6xl md:max-w-2xl mx-auto hidden lg:block headline">
+                <img class="z-[-1] h-full scale-125" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/394b1aa1-a6ff-40db-8f66-55c7a60d51d6_ionic-io-homepage-enterprise-0.png" alt="">
+            </div>
+        </div>
+
+        
+        <!-- Card -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-10 lg:gap-y-0 max-w-2xl mx-auto lg:max-w-6xl mt-10 lg:mt-0">
+            <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 hover:border-slate-400 overflow-hidden card-hover headline">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-16 mb-12" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F9915e86a-b85d-4e98-9475-5ab97680a91a_ionic-io-homepage-enterprise-1.png&w=64&q=75" alt="">
+                            <h1 class="text-slate-800 text-2xl font-bold dark:text-slate-400">Ionic Framework</h1>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.from web to native with no platform dependencies or complex build.
+                            </h1>
+                        </div>
+            </div>
+
+             <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 hover:border-slate-400 overflow-hidden card-hover headline">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-16 mb-12" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F43001afa-bbdb-4913-adf9-ab496eda5f86_ionic-io-homepage-enterprise-2.png&w=96&q=75" alt="">
+                            <h1 class="text-slate-800 text-2xl font-bold dark:text-slate-400">Ionic Framework</h1>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.
+                                from web to native with no platform dependencies or complex build.
+                            </h1>
+                        </div>
+            </div>
+
+             <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 hover:border-slate-400 overflow-hidden card-hover headline">
+                        <div class="  p-8 rounded-xl ">
+                            <img class="w-16 mb-12" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fc4988a01-f6b8-4229-800b-dfc88b62bcf6_ionic-io-homepage-enterprise-3.png&w=96&q=75" alt="">
+                            <h1 class="text-slate-800 text-2xl font-bold dark:text-slate-400">Ionic Framework</h1>
+                            <h1 class="text-slate-500 font-bold mt-6 text-sm capitalize" >
+                                go from web to native with no platform dependencies or complex build steps.from web to native with no platform dependencies or complex build.
+                            </h1>
+                        </div>
+            </div>
+        </div>
+
+
+        <div class="mt-24 text-3xl  lg:text-4xl text-center lg:text-start headline">
+            <h1 class="text-slate-800 dark:text-slate-300">Go even further with Ionic expert services.</h1>
+        </div>
+
+        <!-- Brain -->
+        <div class="grid lg:grid-cols-2 mt-14 gap-x-10 max-w-2xl lg:max-w-6xl mx-auto gap-14 lg:gap-y-0">
+
+            <div class="border border-slate-400 shadow-lg hover:shadow-2xl hover:border-slate-500 duration-300 rounded-3xl headline">
+                <div class="relative h-[200px] md:h-[280px]">
+                    <img class="absolute h-full right-0 opacity-50 md:opacity-100" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/791eead6-7a73-43ad-8b5b-993ec94bbe7d_ionic-io-homepage-enterprise-4.png" alt="">
+                    <div class="absolute h-full flex items-center p-8">
+                        <div class="">
+                            <h1 class="text-slate-500 text-lg font-bold uppercase">Ionic Support</h1>
+                            <h1 class="text-slate-800 dark:text-slate-400 font-bold mt-6 text-xl md:text-2xl capitalize md:max-w-[180px]" >
+                             Your partner,at every stage of development.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-slate-400 shadow-lg hover:shadow-2xl hover:border-slate-500 duration-300 rounded-3xl headline">
+                <div class="relative h-[200px] md:h-[280px]">
+                    <img class="absolute h-full right-0 opacity-50 md:opacity-100" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/a633dd3a-6170-4644-b424-2ecb6ee59b91_ionic-io-homepage-enterprise-5.png" alt="">
+                    <div class="absolute h-full flex items-center p-8">
+                        <div class="">
+                            <h1 class="text-slate-500 text-lg font-bold uppercase">Ionic training</h1>
+                            <h1 class="text-slate-800 dark:text-slate-400 font-bold mt-6 text-xl md:text-2xl capitalize md:max-w-[180px]" >
+                             Empower your team with the skills to deliver,faster
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20  headline">
+            <h3 class="text-slate-500 text-md text-center dark:text-slate-200">1000’S OF CUSTOMERS</h3>
+            <h1 class="text-3xl mt-5 md:mt-0 md:text-5xl font-bold text-slate-800 text-center max-w-xl mx-auto dark:text-slate-300">
+                Loved by developers. Trusted by enterprise.
+            </h1>
+        </div>
+    </section>
+
+     <!-- .slide-section -->
+     <div class="px-5 md:px-0 mx-auto max-w-2xl lg:max-w-[1800px] headline">
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+               <!-- card -->
+              <div class="">
+                <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                  <div class="absolute bg-[#4d96db] opacity-[0.8] h-full w-full"></div>
+                   <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-nhs.png" alt="">
+                   <div class=""></div>
+                   <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                    <div class="">
+                        <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-nhs-light.png&w=96&q=75" alt="">
+                        <h1 class="text-white max-w-xl mt-8">
+                            Learn how one of the world's largest health care providers.    National Health service,choose ionic to boost worker     productivity and agility.
+                        </h1>
+                        <button class="bg-blue-400 mt-10 text-slate-100 px-3 py-2 rounded-full  ">See all of your case studies
+                        <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </button>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+             <div class="">
+            <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                <div class="absolute bg-[#78d16a] opacity-[0.8] h-full w-full"></div>
+                <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+                <div class=""></div>
+                <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                    <div class="">
+                        <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                        <h1 class="text-white max-w-xl mt-8">
+                           H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                        </h1>
+                        <button class="bg-green-400 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                        <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+               </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#2d459c] opacity-[0.8] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-southwest.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-southwest-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   Southwest delivers a cutting-edge mobile experience ro riders while acceleration developement timelines,reducing risk,and improving operational agility.
+                                </h1>
+                                <button class="bg-violet-500 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#303030] opacity-[0.8] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-burger-king.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-bobcat-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                                </h1>
+                                <button class="bg-slate-600 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#e33a2a] opacity-[0.6] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                                </h1>
+                                <button class="bg-[#f85344] mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                       </div>
+              </div>
+              ...
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+   <section class="px-5 md:px-0 py-10 ">
+    <div class="max-w-2xl lg:max-w-6xl mx-auto bg-slate-900 dark:bg-slate-800 py-10 md:py-28 rounded-3xl shadow-lg mt-32">
+        <div class="max-w-2xl  mx-auto p-5">
+            <h1 class="text-slate-100 text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+                One codebase. Any platform.
+            </h1>
+            <h3 class="text-slate-200 text-lg md:text-xl lg:text-2xl mt-5 text-center">
+                Start building, or get in touch with our app experts.
+            </h3>
+            <div class="mt-12 text-center space-x-5">
+                <button class="text-slate-800 text-sm md:text-md bg-slate-100 px-2 py-1 md:px-3 md:py-2 rounded-full">
+                    Get Started
+                    <i class="fa-solid fa-arrow-right text-slate-800"></i>
+
+                </button>
+                <button class="text-slate-100  text-sm md:text-md">
+                    Contact scales
+                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class=" max-w-2xl lg:max-w-6xl mx-auto mt-32 ">
+        <div class="grid grid-cols-3 gap-10 lg:gap-0 lg:grid-cols-6">
+            <div class="logo w-20">
+            
+                
+            </div>
+            <div class="headline">
+                <ul>
+                    <li class="text-slate-800 text-md md:text-lg mb-3 dark:text-slate-300">The Platform</li>
+                    <li class="text-slate-500 mb-2">Overview</li>
+                    <li class="text-slate-500 mb-2">Build</li>
+                    <li class="text-slate-500 mb-2">Secure</li>
+                    <li class="text-slate-500 ">Deliver</li>
+                    <li class="text-slate-500 ">Why Ionic?</li>
+                </ul>
+            </div>
+            <div class="headline">
+                <ul>
+                    <li class="text-slate-800 text-md md:text-lg mb-3 dark:text-slate-300">Products</li>
+                    <li class="text-slate-500 mb-2">Framework</li>
+                    <li class="text-slate-500 mb-2">Capacitor</li>
+                    <li class="text-slate-500 mb-2">Appflow</li>
+                    <li class="text-slate-500 ">Secure Storage</li>
+                    <li class="text-slate-500 ">Auth Connect</li>
+                </ul>
+            </div>
+            <div class="headline">
+                <ul>
+                    <li class="text-slate-800 text-md md:text-lg mb-3 dark:text-slate-300">Company</li>
+                    <li class="text-slate-500 mb-2">About us</li>
+                    <li class="text-slate-500 mb-2">Customers</li>
+                    <li class="text-slate-500 mb-2">Brand</li>
+                    <li class="text-slate-500 ">Conatct</li>
+                    <li class="text-slate-500 ">Careers</li>
+                    <li class="text-slate-500 ">Privacy</li>
+
+                </ul>
+            </div>
+            <div class="headline">
+                <ul>
+                    <li class="text-slate-800 text-md md:text-lg mb-3 dark:text-slate-300">Resources</li>
+                    <li class="text-slate-500 mb-2">Resources Center</li>
+                    <li class="text-slate-500 mb-2">Vlog</li>
+                    <li class="text-slate-500 mb-2">Articles</li>
+                    <li class="text-slate-500 ">Webinars</li>
+                    <li class="text-slate-500 ">Case Studies</li>
+                    <li class="text-slate-500 ">Videos</li>
+                </ul>
+            </div>
+            <div class="headline">
+                <ul>
+                    <li class="text-slate-800 text-md md:text-lg mb-3 dark:text-slate-300">Support</li>
+                    <li class="text-slate-500 mb-2">Help Center</li>
+                    <li class="text-slate-500 mb-2">Partners</li>
+                    <li class="text-slate-500 mb-2">Advisory</li>
+                    <li class="text-slate-500 ">Webinars</li>
+                    <li class="text-slate-500 ">Enterprise Guide</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border border-slate-300 mt-28 mb-10"></div>
+
+        <div class="flex flex-col md:flex-row justify-center md:justify-between">
+            <div class="flex gap-x-4 justify-center md:justify-start headline">
+                <h1 class="text-slate-400">Copyright © 2022 Ionic</h1>
+                <a href="" class="text-slate-400 hover:text-slate-500">
+                    Terms 
+                </a>
+                <a href="" class="text-slate-400 hover:text-slate-500">
+                    Privacy
+                </a>
+            </div>
+            <div class="flex justify-center md:justify-start gap-x-3 mt-3 md:mt-0 headline">
+                <i class="fab fa-twitter text-slate-400 hover:text-slate-500"></i>
+                <i class="fab fa-github text-slate-400 hover:text-slate-500"></i>
+                <i class="fab fa-facebook text-slate-400 hover:text-slate-500"></i>
+            </div>
+        </div>
+    </footer>
+
+   </section> 
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../node_module/swiper/swiper-bundle.min.js"></script>
+    <script src="./cus.js"></script>
+</body>
+<script >
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          390: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+</script>
+</html>
+
